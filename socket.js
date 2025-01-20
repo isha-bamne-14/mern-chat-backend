@@ -1,4 +1,6 @@
 const socketIo = (io) => {
+  console.log("Inside server socket");
+
   //store the connected users with their room information using socket.id as their key
   const connectedUsers = new Map();
   io.on("connection", (socket) => {
